@@ -10,7 +10,7 @@ keywords:
   - process
 home: https://nifi.apache.org/
 icon: https://svn.apache.org/repos/asf/nifi/site/trunk/images/niFi-logo-horizontal-scaled.png
-source:
+sources:
   - https://github.com/thefarmersfront/helm-nifi
 maintainers:
   - name: banzo

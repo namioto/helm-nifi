@@ -40,7 +40,7 @@ The following items can be set via `--set` flag during installation or configure
 
 #### Configure authentication
 
-- By default, the authentication is a `Single-User` authentication. You can optionally enable `ldap` or `oidc` to provide an external authentication. See the [configuration section](README.md#configuration) or [doc](doc/) folder for more details.
+- By default, the authentication is a `Single-User` authentication. You can optionally enable `ldap` or `oidc` to provide an external authentication. See the [configuration section](README.md#configuration) or [doc](docs/) folder for more details.
 
 #### Use custom processors
 
@@ -75,7 +75,7 @@ helm install my-release cetic/nifi
 
 ### Install from local clone
 
-You will find how to perform an installation from a local clone on this [page](doc/INSTALLATION.md).
+You will find how to perform an installation from a local clone on this [page](docs/INSTALLATION.md).
 
 ## Uninstallation
 
@@ -139,7 +139,7 @@ The following table lists the configurable parameters of the nifi chart and the 
 | `properties.safetyValve`                                                                    | Map of explicit 'property: value' pairs that overwrite other configuration                                                                                                                                                                                                                                                                                                                                             | `nil`                                                                            |
 | `properties.customLibPath`                                                                  | Path of the custom libraries folder                                                                                                                                                                                                                                                                                                                                                                                    | `nil`                                                                            |
 | `properties.webProxyHost`                                                                   | Proxy to access to Nifi through the cluster ip address                                                                                                                                                                                                                                                                                                                                                                 | `[nifi.nifi.svc]`                                                                |
-| **[Authentication](/doc/USERMANAGEMENT.md)**                                                |                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                  |
+| **[Authentication](/docs/USERMANAGEMENT.md)**                                                |                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                  |
 | **Single-user authentication**                                                              | Automatically disabled if Client Certificate, OIDC, or LDAP enabled                                                                                                                                                                                                                                                                                                                                                    |                                                                                  |
 | `auth.     admin`                                                                           | Default admin identity. It will overwrite the LDAP Bind DN for this purpose, when both is filled                                                                                                                                                                                                                                                                                                                       | ` CN=admin, OU=NIFI`                                                             |
 | `auth.singleUser.username`                                                                  | Single user identity                                                                                                                                                                                                                                                                                                                                                                                                   | `username`                                                                       |
@@ -277,7 +277,7 @@ The following table lists the configurable parameters of the nifi chart and the 
 
 Before [filing a bug report](https://github.com/cetic/helm-nifi/issues/new/choose), you may want to:
 
-* check the [FAQ](/doc/FAQ.md)
+* check the [FAQ](/docs/FAQ.md)
 * check that [persistent storage](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) is configured on your cluster
 * keep in mind that a first installation may take a significant amount of time on a home internet connection
 * check if a pod is in error:
